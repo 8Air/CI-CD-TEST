@@ -1,0 +1,15 @@
+[Unit]
+Description=X-PORT DJI (PSDKv3 XPD22)
+After=syslog.target
+[Service]
+Type=simple
+ExecStart=/xport/apptest-camera/apptest
+WorkingDirectory=/xport/apptest-camera/
+PIDFile=/run/service.pid
+OOMScoreAdjust=-900
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+RestartSec=10
+[Install]
+WantedBy=multi-user.target

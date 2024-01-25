@@ -1,0 +1,185 @@
+{           	
+  "version":  {"major" :  1,"minor" :  0 },
+   "main_interface": {
+        "floating_window": { "is_enable": false       },
+        "widget_list": [ ]
+   },
+
+  "config_interface": 
+    {
+    "text_input_box": 
+      { 
+      "widget_name":"TextInputBox", 
+      "placeholder_text":"Please input message",
+      "is_enable":false 
+      },
+    "widget_list": 
+    [
+      {
+        "widget_index": 0,
+        "widget_type": "list",
+        "widget_name": "ISO",
+        "list_item": 
+          [
+{"item_name": "ISO AUTO"},
+{"item_name": "ISO 50"},
+{"item_name": "ISO 64"},
+{"item_name": "ISO 80"},
+{"item_name": "ISO 100"},
+{"item_name": "ISO 125"},
+{"item_name": "ISO 160"},
+{"item_name": "ISO 200"},
+{"item_name": "ISO 250"},
+{"item_name": "ISO 320"},
+{"item_name": "ISO 400"},
+{"item_name": "ISO 500"},
+{"item_name": "ISO 640"},
+{"item_name": "ISO 800"},
+{"item_name": "ISO 1000"},
+{"item_name": "ISO 1250"},
+{"item_name": "ISO 1600"},
+{"item_name": "ISO 2000"},
+{"item_name": "ISO 2500"},
+{"item_name": "ISO 3200"},
+{"item_name": "ISO 4000"},
+{"item_name": "ISO 5000"},
+{"item_name": "ISO 6400"},
+{"item_name": "ISO 8000"},
+{"item_name": "ISO 10000"},
+{"item_name": "ISO 12800"},
+{"item_name": "ISO 16000"},
+{"item_name": "ISO 20000"},
+{"item_name": "ISO 25600"},
+{"item_name": "ISO 32000"},
+{"item_name": "ISO 40000"},
+{"item_name": "ISO 51200"},
+{"item_name": "ISO 64000"},
+{"item_name": "ISO 80000"},
+{"item_name": "ISO 102400"}
+          ]
+       },
+       {
+         "widget_index": 1,
+         "widget_type": "list",
+         "widget_name": "Aperture",
+       "list_item": 
+         [
+{"item_name": "F2.8"},
+{"item_name": "F3.2"},
+{"item_name": "F3.5"},
+{"item_name": "F4"},
+{"item_name": "F4.5"},
+{"item_name": "F5"},
+{"item_name": "F5.6"},
+{"item_name": "F6.3"},
+{"item_name": "F7.1"},
+{"item_name": "F8"},
+{"item_name": "F9"},
+{"item_name": "F10"},
+{"item_name": "F11"},
+{"item_name": "F13"},
+{"item_name": "F14"},
+{"item_name": "F16"},
+{"item_name": "F18"},
+{"item_name": "F20"},
+{"item_name": "F22"},
+{"item_name": "AUTO"}
+         ]
+       },
+       {
+         "widget_index": 2,
+         "widget_type": "list",
+         "widget_name": "Shutter",
+         "list_item": 
+           [
+{"item_name":"30s"},
+{"item_name":"25s"},
+{"item_name":"20s"},
+{"item_name":"15s"},
+{"item_name":"13s"},
+{"item_name":"10s"},
+{"item_name":"8s"},
+{"item_name":"6s"},
+{"item_name":"5s"},
+{"item_name":"4s"},
+{"item_name":"3.2s"},
+{"item_name":"2.5s"},
+{"item_name":"2s"},
+{"item_name":"1.6s"},
+{"item_name":"1.3s"},
+{"item_name":"1s"},
+{"item_name":"0.8s"},
+{"item_name":"0.6s"},
+{"item_name":"0.5s"},
+{"item_name":"0.4s"},
+{"item_name":"1/3"},
+{"item_name":"1/4"},
+{"item_name":"1/5"},
+{"item_name":"1/6"},
+{"item_name":"1/8"},
+{"item_name":"1/10"},
+{"item_name":"1/13"},
+{"item_name":"1/15"},
+{"item_name":"1/20"},
+{"item_name":"1/25"},
+{"item_name":"1/30"},
+{"item_name":"1/40"},
+{"item_name":"1/50"},
+{"item_name":"1/60"},
+{"item_name":"1/80"},
+{"item_name":"1/100"},
+{"item_name":"1/125"},
+{"item_name":"1/160"},
+{"item_name":"1/200"},
+{"item_name":"1/250"},
+{"item_name":"1/320"},
+{"item_name":"1/400"},
+{"item_name":"1/500"},
+{"item_name":"1/640"},
+{"item_name":"1/800"},
+{"item_name":"1/1000"},
+{"item_name":"1/1250"},
+{"item_name":"1/1600"},
+{"item_name":"1/2000"},
+{"item_name":"1/2500"},
+{"item_name":"1/3200"},
+{"item_name":"1/4000"},
+{"item_name":"1/5000"},
+{"item_name":"1/6400"},
+{"item_name":"1/8000"},
+{"item_name":"AUTO"}
+
+           ]
+       },
+       {
+         "widget_index": 3,
+         "widget_type": "list",
+         "widget_name": "Mode",
+         "list_item": 
+         [
+{"item_name": "[P] Program Auto"},
+{"item_name": "[A] Aperture priority"},
+{"item_name": "[S] Shutter priority"},
+{"item_name": "[M] Manual"}
+         ]
+       },
+       {
+         "widget_index": 4,
+         "widget_type": "list",
+         "widget_name": "Interval shooting",
+         "list_item": 
+         [
+{"item_name": "Single shoot"},
+{"item_name": "1.5"},
+{"item_name": "2.0"},
+{"item_name": "2.5"},
+{"item_name": "3.0"},
+{"item_name": "3.5"},
+{"item_name": "4.0"},
+{"item_name": "4.5"},
+{"item_name": "5.0"}
+         ]
+       }
+     ]
+   }
+}

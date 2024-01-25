@@ -1,0 +1,38 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        complect: [Sony]
+    runs-on: self-hosted
+    name: ${{ matrix.complect }} ARMv7 Build and Test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+
+      - name: Pull Docker image
+        run: docker pull mak733/aquamapper:1.0-builder
+
+      - name: Create build directory
+        run: mkdir -p "${{ github.workspace }}/build/${{ matrix.complect }}"
+
+      - name: Run Docker image with mounted code
+        run: |
+          docker run --rm --name builder -v "${{ github.workspace }}:/workspace" -w /workspace/build/${{ matrix.complect }} mak733/aquamapper:1.0-builder /bin/sh -c "\
+            cmake -DCMAKE_BUILD_TYPE=Release -DCOMPLECT=${{ matrix.complect }} -S /workspace -B . ; \
+            cmake -DCMAKE_BUILD_TYPE=Release -DCOMPLECT=${{ matrix.complect }} -S /workspace -B . && \
+            cmake --build . && \
+            find . -type f -exec chmod a+rw {} \; -o -type d -exec chmod a+rwx {} \;"

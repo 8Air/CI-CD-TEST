@@ -1,0 +1,68 @@
+{
+  "version":  {"major" :  1,"minor" :  0 },
+  "main_interface": {
+    "floating_window": { "is_enable": false       },
+    "widget_list": [ ]
+  },
+
+  "config_interface":
+  {
+    "widget_list":
+    [
+      {
+        "widget_index": 0,
+        "widget_type": "list",
+        "widget_name": "Range, m",
+        "list_item": [
+          { "item_name": "10m" },
+          { "item_name": "20m" },
+          { "item_name": "30m" },
+          { "item_name": "40m" },
+          { "item_name": "50m" },
+          { "item_name": "60m" },
+          { "item_name": "70m" },
+          { "item_name": "80m" },
+          { "item_name": "90m" },
+          { "item_name": "100m" }
+        ]
+      },
+      {
+        "widget_index": 1,
+        "widget_type": "list",
+        "widget_name": "Interval between pulses, Hz",
+        "list_item": [
+          { "item_name": "10Hz"},
+          { "item_name": "5Hz" },
+          { "item_name": "4Hz" },
+          { "item_name": "2Hz" }
+        ]
+      },
+      {
+        "widget_index": 2,
+        "widget_type": "scale",
+        "widget_name": "Threshold, %"
+      },
+      {
+        "widget_index": 3,
+        "widget_type": "list",
+        "widget_name": "Analog Gain, -30~+30",
+        "list_item": [
+          { "item_name": "-30" },
+          { "item_name": "-25" },
+          { "item_name": "-20" },
+          { "item_name": "-15" },
+          { "item_name": "-10" },
+          { "item_name": "-5" },
+          { "item_name": "0" },
+          { "item_name": "5" },
+          { "item_name": "10" },
+          { "item_name": "15" },
+          { "item_name": "20" },
+          { "item_name": "25" },
+          { "item_name": "30" }
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,2 @@
+set(PROJECT_NAME "P24")
+

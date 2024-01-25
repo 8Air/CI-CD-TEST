@@ -1,0 +1,15 @@
+[Unit]
+Description=xpd 2.2 SIMPLE control service
+After=syslog.target
+[Service]
+Type=simple
+ExecStart=/xport/xpd22s.sh
+WorkingDirectory=/xport/
+PIDFile=/run/service.pid
+OOMScoreAdjust=-900
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+RestartSec=10
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,29 @@
+name: Manual Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      complect:
+        description: 'Choose a complect to deploy'
+        required: true
+        default: 'Sony'
+        type: choice
+        options:
+          - 'Sony'
+          - 'Aquamaper'
+          - 'P24'
+          - 'Xpd22-hdmi'
+          - 'X-cam'
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    name: Deploy ${{ github.event.inputs.complect }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: ${{ github.event.inputs.complect }}-artifacts
